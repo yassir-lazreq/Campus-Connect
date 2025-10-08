@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Formations CampusConnect">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Campus<span>Connect</span></a>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="formations.html" onclick="closeMenu()">Formations</a></li>
+                <li><a href="evenements.html" onclick="closeMenu()">Événements</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!-- ==================== FORMATIONS SECTION ==================== -->
+    <section id="formations">
+        <div class="section-header">
+            <span class="tag">Nos Programmes</span>
+            <h2>Formations d'Excellence</h2>
+            <p>Des parcours intensifs et pratiques pour vous propulser dans l'industrie tech</p>
+        </div>
+        <div class="formations-grid">
+            <div class="formation-card">
+                <div class="image">
+                    <img src="formation1.jpeg" alt="Développement Web Full-Stack" height="400" width="600">
+                </div>
+                <div class="content">
+                    <span class="badge">6 mois</span>
+                    <h3>Développement Web Full-Stack</h3>
+                    <p>Maîtrisez l'écosystème complet du web moderne : HTML, CSS, JavaScript, React, Node.js et bien plus. Créez des applications performantes et scalables.</p>
+                    <a href="#" class="learn-more">En savoir plus →</a>
+                </div>
+            </div>
+            <div class="formation-card">
+                <div class="image">
+                    <img src="formation2.jpeg" alt="Développement Mobile" height="400" width="600">
+                </div>
+                <div class="content">
+                    <span class="badge">5 mois</span>
+                    <h3>Développement Mobile</h3>
+                    <p>Développez des applications natives iOS et Android avec React Native et Flutter. De la conception au déploiement sur les stores.</p>
+                    <a href="#" class="learn-more">En savoir plus →</a>
+                </div>
+            </div>
+            <div class="formation-card">
+                <div class="image">
+                    <img src="formation3.jpeg" alt="Intelligence Artificielle & Data Science" height="400" width="600">
+                </div>
+                <div class="content">
+                    <span class="badge">8 mois</span>
+                    <h3>Intelligence Artificielle & Data Science</h3>
+                    <p>Plongez dans le machine learning et le deep learning. Analysez des données et créez des modèles prédictifs avec Python et TensorFlow.</p>
+                    <a href="#" class="learn-more">En savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2025 Campus Connect</p>
+        <p>Campus Connect | Formations | Événements | Contact</p>
+    </footer>
+</body>
+</html>

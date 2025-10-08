@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="CampusConnect">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="container">
+            <a href="" class="logo">Campus<span>Connect</span></a>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="formations.html" onclick="closeMenu()">Formations</a></li>
+                <li><a href="evenements.html" onclick="closeMenu()">Événements</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="accueil">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Transformez votre <span class="highlight">passion</span> en carrière</h1>
+                <p>Rejoignez CampusConnect et maîtrisez les technologies qui façonnent l'avenir. Des formations intensives conçues pour faire de vous un développeur d'exception.</p>
+                <div class="hero-buttons">
+                    <a href="formations.html" class="btn-primary">Formations</a>
+                    <a href="contact.html" class="btn-secondary">Contact</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.jpeg" alt="Hero Image" height="400" width="600">
+            </div>
+        </div>
+    </section>
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2025 Campus Connect</p>
+        <p>Campus Connect | Formations | Événements | Contact</p>
+    </footer>
+</body>
+</html>

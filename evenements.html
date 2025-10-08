@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Evénements CampusConnect">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Campus<span>Connect</span></a>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="formations.html" onclick="closeMenu()">Formations</a></li>
+                <li><a href="evenements.html" onclick="closeMenu()">Événements</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ==================== EVENTS SECTION ==================== -->
+    <section id="evenements">
+        <div class="section-header">
+            <span class="tag">A venir</span>
+            <h2>Événements & Rencontres</h2>
+            <p>Participez à nos événements pour enrichir votre parcours et élargir votre réseau.</p>
+        </div>
+        <div class="events-container">
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="date-badge">15 NOV</span>
+                </div>
+                <div class="event-dot"></div>
+                <div class="event-content">
+                    <h3>🎤  Conférence : L'avenir du développement web</h3>
+                    <p>Une journée immersive avec des experts de l'industrie qui partagent leurs visions sur les technologies émergentes, les frameworks du futur et les meilleures pratiques pour rester à la pointe de l'innovation. Inscription gratuite pour tous.</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="date-badge">28 NOV</span>
+                </div>
+                <div class="event-dot"></div>
+                <div class="event-content">
+                    <h3>🏆  Hackathon CampusConnect 2025</h3>
+                    <p>8 heures d'innovation intensive ! Formez votre équipe, développez une solution créative et remportez des prix exceptionnels. Challenges variés, mentors expérimentés et opportunités de networking. Tous niveaux bienvenus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2025 Campus Connect</p>
+        <p>Campus Connect | Formations | Événements | Contact</p>
+    </footer>
+</body>
+</html>
