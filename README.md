@@ -18,9 +18,12 @@ CampusConnect is a multi-page website for a school. It allows visitors to easily
 ├── formations.html
 ├── evenements.html
 ├── contact.html
+├── formulaire.html
 ├── style.css
-├── images/
-│   └── campusconnect-logo.png
+├── formation1.jpeg
+├── formation2.jpeg
+├── formation3.jpeg
+├── hero-image.jpeg
 └── README.md
 ```
 
