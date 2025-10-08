@@ -26,7 +26,7 @@ CampusConnect is a multi-page website for a school. It allows visitors to easily
 
 ## Online Demo
 
-[View the site on GitHub Pages](https://yourusername.github.io/your-repo-name/)
+[View the site on GitHub Pages](https://yassir-lazreq.github.io/Campus-Connect/)
 
 ## How to Use
 
