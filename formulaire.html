@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire - CampusConnect">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire - CampusConnect</title>
+</head>
+<body class="form-body">
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Campus<span>Connect</span></a>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="formations.html" onclick="closeMenu()">Formations</a></li>
+                <li><a href="evenements.html" onclick="closeMenu()">Événements</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ==================== FORM SECTION ==================== -->
+    <section id="form-section">
+        <div class="form-container">
+            <h2>Inscription à un Événement</h2>
+            <form id="registrationForm" onsubmit="event.preventDefault(); alert('Form submitted!');">
+                <div class="form-group">
+                    <label for="fullName">Nom Complet</label>
+                    <input type="text" id="fullName" name="fullName" required class="form-input" placeholder="Votre nom complet">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required class="form-input" placeholder="Votre email">
+                </div>
+                <div class="form-group">
+                    <label for="evenement">Événement</label>
+                    <select id="evenement" name="evenement" required class="form-select">
+                        <option value="" class="form-option">--Sélectionnez un événement--</option>
+                        <option value="web-dev" class="form-option">Développement Web</option>
+                        <option value="data-science" class="form-option">Data Science</option>
+                    </select>
+                </div>
+                <button type="submit" class="form-button">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2025 Campus Connect</p>
+        <p>Campus Connect | Formations | Événements | Contact</p>
+    </footer>
+</body>
+</html>

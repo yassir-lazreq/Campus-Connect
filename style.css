@@ -1,11 +1,77 @@
+/* ==================== FORMULAIRE MODERNE ==================== */
+#form-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light);
+    padding: 8rem 2rem 4rem 2rem;
+}
 
-        /* ==================== RÉINITIALISATION ==================== */
-        * {
+.form-container {
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 102, 255, 0.12);
+    padding: 2.5rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-input, .form-select {
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    font-size: 1rem;
+    background: var(--light);
+    color: var(--dark);
+    outline: none;
+    transition: border-color 0.3s;
+}
+.form-input:focus, .form-select:focus {
+    border-color: var(--primary);
+}
+
+.form-button {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 5px 20px rgba(0, 102, 255, 0.15);
+}
+.form-button:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+/* ==================== RÉINITIALISATION ==================== */
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         :root {
             --primary: #0066FF;
             --secondary: #00D9FF;
@@ -14,7 +80,7 @@
             --gray: #64748B;
             --white: #FFFFFF;
         }
-
+        
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.7;
@@ -22,9 +88,9 @@
             background: var(--white);
             overflow-x: hidden;
         }
-
+        
         /* ==================== NAVIGATION MODERNE ==================== */
-    
+        
         nav {
             position: fixed;
             top: 0;
@@ -43,7 +109,7 @@
             justify-content: space-between;
             align-items: center;
         }
-
+        
         nav .logo {
             font-size: 1.5rem;
             font-weight: 700;
@@ -53,7 +119,7 @@
             align-items: center;
             gap: 0.5rem;
         }
-
+        
         nav .logo span {
             color: var(--primary);
         }
@@ -63,7 +129,7 @@
             list-style: none;
             gap: 3rem;
         }
-
+        
         nav ul li a {
             color: var(--gray);
             text-decoration: none;
@@ -72,11 +138,11 @@
             transition: color 0.3s;
             position: relative;
         }
-
+        
         nav ul li a:hover {
             color: var(--primary);
         }
-
+        
         nav ul li a::after {
             content: '';
             position: absolute;
@@ -87,11 +153,11 @@
             background: var(--primary);
             transition: width 0.3s;
         }
-
+        
         nav ul li a:hover::after {
             width: 100%;
         }
-
+        
         .burger-menu {
             display: none;
             flex-direction: column;
@@ -99,7 +165,7 @@
             cursor: pointer;
             z-index: 1001;
         }
-
+        
         .burger-menu span {
             width: 28px;
             height: 3px;
@@ -115,13 +181,13 @@
         .burger-menu.active span:nth-child(2) {
             opacity: 0;
         }
-
+        
         .burger-menu.active span:nth-child(3) {
             transform: rotate(-45deg) translate(7px, -7px);
         }
-
+        
         /* ==================== HERO SECTION ULTRA-MODERNE ==================== */
-    
+        
         #accueil {
             min-height: 100vh;
             display: flex;
@@ -132,7 +198,7 @@
             overflow: hidden;
             padding-top: 80px;
         }
-
+        
         #accueil::before {
             content: '';
             position: absolute;
@@ -143,7 +209,7 @@
             right: -200px;
             border-radius: 50%;
         }
-
+        
         #accueil::after {
             content: '';
             position: absolute;
@@ -166,7 +232,7 @@
             position: relative;
             z-index: 1;
         }
-
+        
         .hero-text h1 {
             font-size: 4.5rem;
             font-weight: 800;
@@ -175,7 +241,7 @@
             margin-bottom: 1.5rem;
             letter-spacing: -0.02em;
         }
-
+        
         .hero-text h1 .highlight {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             -webkit-background-clip: text;
@@ -189,7 +255,7 @@
             margin-bottom: 2.5rem;
             line-height: 1.8;
         }
-
+        
         .hero-buttons {
             display: flex;
             gap: 1rem;
@@ -209,12 +275,12 @@
             transition: all 0.3s;
             box-shadow: 0 10px 30px rgba(0, 102, 255, 0.3);
         }
-
+        
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 15px 40px rgba(0, 102, 255, 0.4);
         }
-
+        
         .btn-secondary {
             padding: 1rem 2.5rem;
             background: transparent;
@@ -246,7 +312,7 @@
         }
 
         /* ==================== FORMATIONS MODERNE ==================== */
-    
+        
         #formations {
             padding: 8rem 3rem;
             background: var(--light);
@@ -276,12 +342,12 @@
             margin-bottom: 1rem;
             letter-spacing: -0.02em;
         }
-
+        
         .section-header p {
             font-size: 1.1rem;
             color: var(--gray);
         }
-
+        
         .formations-grid {
             max-width: 1400px;
             margin: 0 auto;
@@ -302,7 +368,7 @@
             transform: translateY(-10px);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         }
-
+        
         .formation-card .image {
             width: 100%;
             height: 240px;
@@ -324,7 +390,7 @@
         .formation-card .content {
             padding: 2rem;
         }
-
+        
         .formation-card .badge {
             display: inline-block;
             padding: 0.4rem 1rem;
@@ -348,7 +414,7 @@
             line-height: 1.7;
             margin-bottom: 1.5rem;
         }
-
+        
         .formation-card .learn-more {
             color: var(--primary);
             font-weight: 600;
@@ -368,13 +434,13 @@
             padding: 8rem 3rem;
             background: var(--white);
         }
-
+        
         .events-container {
             max-width: 1000px;
             margin: 0 auto;
             position: relative;
         }
-
+        
         .events-container::before {
             content: '';
             position: absolute;
@@ -392,7 +458,7 @@
             margin-bottom: 4rem;
             position: relative;
         }
-
+        
         .event-item:nth-child(odd) {
             flex-direction: row-reverse;
         }
@@ -402,7 +468,7 @@
             text-align: right;
             padding-right: 3rem;
         }
-
+        
         .event-item:nth-child(odd) .event-date {
             text-align: left;
             padding-left: 3rem;
@@ -431,7 +497,7 @@
             border-radius: 50%;
             box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.2);
         }
-
+        
         .event-content {
             flex: 0 0 45%;
             background: var(--light);
@@ -446,12 +512,12 @@
             color: var(--dark);
             margin-bottom: 1rem;
         }
-
+        
         .event-content p {
             color: var(--gray);
             line-height: 1.8;
         }
-
+        
         /* ==================== CONTACT MODERNE ==================== */
         
         #contact {
@@ -481,7 +547,7 @@
             position: relative;
             z-index: 1;
         }
-
+        
         .contact-info-section h2 {
             font-size: 3rem;
             font-weight: 800;
@@ -489,14 +555,14 @@
             margin-bottom: 1.5rem;
             letter-spacing: -0.02em;
         }
-
+        
         .contact-info-section p {
             color: rgba(255, 255, 255, 0.7);
             font-size: 1.1rem;
             margin-bottom: 3rem;
             line-height: 1.8;
         }
-
+        
         .info-cards {
             display: flex;
             flex-direction: column;
@@ -513,7 +579,7 @@
             border-radius: 16px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
+        
         .info-card .icon {
             width: 60px;
             height: 60px;
@@ -525,7 +591,7 @@
             font-size: 1.5rem;
             flex-shrink: 0;
         }
-
+        
         .info-card .text h3 {
             color: var(--white);
             font-weight: 600;
@@ -576,12 +642,12 @@
             background: var(--white);
             box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
         }
-
+        
         .form-group textarea {
             resize: vertical;
             min-height: 150px;
         }
-
+        
         .submit-btn {
             width: 100%;
             padding: 1.2rem;
@@ -602,7 +668,7 @@
         }
 
         /* ==================== FOOTER MINIMALISTE ==================== */
-    
+        
         footer {
             background: var(--dark);
             color: rgba(255, 255, 255, 0.6);
